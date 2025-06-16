@@ -1,22 +1,27 @@
 
-import { Wrench, Wifi, Settings, Clock, Shield, Award } from 'lucide-react';
+import { Settings, Wifi, Shield, HeadphonesIcon, Monitor, UserCheck } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: Wrench,
-      title: "Hardware Repair",
-      description: "Complete printer hardware diagnostics and repair for all mechanical issues and component failures."
+      icon: Monitor,
+      title: "Installation & Setup",
+      description: "Professional installation and network configuration for new printers."
     },
     {
-      icon: Wifi,
-      title: "Network Setup",
-      description: "WiFi connectivity, network configuration, and wireless printing setup for home and office."
+      icon: HeadphonesIcon,
+      title: "Quick Assistance",
+      description: "Quick response time for urgent printer issues to minimize downtime."
     },
     {
       icon: Settings,
-      title: "Maintenance",
-      description: "Preventive maintenance services to keep your printer running smoothly and extend its life."
+      title: "Managed Print Services", 
+      description: "Comprehensive print management to optimize costs and efficiency."
+    },
+    {
+      icon: UserCheck,
+      title: "Printer Consulting",
+      description: "Expert advice on printer selection and fleet optimization."
     }
   ];
 
@@ -29,69 +34,33 @@ const Services = () => {
             Our Printer Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We provide comprehensive printer repair and maintenance services for all major brands. 
-            From simple fixes to complex repairs, our experts handle it all.
+            We provide comprehensive printer solutions to keep your business running smoothly.
           </p>
         </div>
 
-        {/* Main Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {services.map((service, index) => (
-            <div key={index} className="text-center p-8 border border-gray-200 rounded-lg hover:border-red-600 hover:shadow-lg transition-all">
-              <div className="flex items-center justify-center w-20 h-20 bg-red-100 rounded-full mx-auto mb-6">
-                <service.icon className="w-10 h-10 text-red-600" />
+            <div key={index} className="text-center p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mx-auto mb-6">
+                <service.icon className="w-10 h-10 text-blue-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">{service.title}</h3>
+              <p className="text-gray-600 leading-relaxed text-sm">{service.description}</p>
             </div>
           ))}
         </div>
 
-        {/* Common Issues */}
-        <div className="bg-gray-50 rounded-lg p-8 lg:p-12 mb-16">
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Common Printer Problems We Fix
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Paper Jams",
-              "Print Quality Issues", 
-              "Won't Power On",
-              "Error Codes",
-              "Slow Printing",
-              "Network Problems",
-              "Ink/Toner Issues",
-              "Driver Problems"
-            ].map((issue, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg border-l-4 border-red-600 shadow-sm">
-                <span className="text-gray-800 font-semibold">{issue}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Features */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mx-auto mb-4">
-              <Clock className="w-8 h-8 text-red-600" />
+        {/* Contact Info */}
+        <div className="text-center bg-gray-50 rounded-lg p-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+            <div className="flex items-center">
+              <span className="text-2xl mr-2">🇺🇸</span>
+              <span className="text-blue-600 font-bold text-xl">+1-833-712-3079</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Fast Service</h4>
-            <p className="text-gray-600">Same day repairs available for urgent needs</p>
-          </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mx-auto mb-4">
-              <Shield className="w-8 h-8 text-red-600" />
+            <div className="flex items-center">
+              <span className="text-blue-600 font-bold">✉️ support@printerfixexpert.us</span>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Guaranteed Work</h4>
-            <p className="text-gray-600">90-day warranty on all repairs and parts</p>
-          </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mx-auto mb-4">
-              <Award className="w-8 h-8 text-red-600" />
-            </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-2">Expert Technicians</h4>
-            <p className="text-gray-600">Certified professionals with years of experience</p>
           </div>
         </div>
       </div>
