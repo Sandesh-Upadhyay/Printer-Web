@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-      <div className="max-w-[1440px] mx-auto px-4 py-12">
+      <div className="max-w-[1440px] mx-auto px-4 py-8 sm:py-12">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
           {/* Company Info */}
           <motion.div 
             className="md:col-span-2"
@@ -20,12 +20,12 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold mb-4 font-serif bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              PrinterFix Expert
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 font-serif bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Printer Support
             </h3>
-            <p className="text-gray-300 mb-6 font-serif">
-              Professional printer support services for all major brands. Get expert troubleshooting, 
-              wireless setup assistance, and 24/7 technical support.
+            <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 font-serif">
+              Printer support services for all major brands. Get troubleshooting help, 
+              wireless setup assistance, and available support.
             </p>
             <div className="flex space-x-4">
               <motion.a 
@@ -71,8 +71,8 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-lg font-bold mb-4 font-serif">Quick Links</h3>
-            <div className="flex justify-center items-center flex-wrap gap-4 text-gray-400">
+            <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4 font-serif">Quick Links</h3>
+            <div className="flex justify-center items-center flex-wrap gap-2 sm:gap-4 text-sm sm:text-base text-gray-400">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -128,26 +128,26 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <div className="flex justify-center items-center space-x-8 mb-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-4">
               <motion.div 
                 className="flex items-center group cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+                onClick={() => window.location.href = 'tel:+1-877-593-3790'}
               >
                 <span className="text-2xl mr-2">🇺🇸</span>
-                <span className="text-blue-600 font-bold text-xl font-serif group-hover:text-blue-700 transition-colors">
-                  +1-888-404-6710
+                <span className="text-blue-600 font-bold text-lg sm:text-xl font-serif group-hover:text-blue-700 transition-colors">
+                  +1 (877) 593-3790
                 </span>
               </motion.div>
               <motion.div 
                 className="flex items-center group cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'mailto:info@allitexpert.com'}
+                onClick={() => window.location.href = 'mailto:contact@setupprinter.online'}
               >
-                <span className="text-blue-600 font-bold font-serif group-hover:text-blue-700 transition-colors">
-                  ✉️ info@allitexpert.com
+                <span className="text-blue-600 font-bold text-sm sm:text-base font-serif group-hover:text-blue-700 transition-colors">
+                  ✉️ contact@setupprinter.online
                 </span>
               </motion.div>
             </div>
@@ -156,21 +156,21 @@ const Footer = () => {
 
         {/* Disclaimer Section */}
         <motion.div 
-          className="mb-8 p-6 bg-gray-800 rounded-lg border border-gray-700"
+          className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-800 rounded-lg border border-gray-700"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-xl font-bold text-center mb-4 font-serif">Disclaimer</h2>
-          <p className="text-center text-gray-300 max-w-4xl mx-auto font-serif">
+          <h2 className="text-lg sm:text-xl font-bold text-center mb-3 sm:mb-4 font-serif">Disclaimer</h2>
+          <p className="text-center text-sm sm:text-base text-gray-300 max-w-4xl mx-auto font-serif">
             Printer Fix is an independent service provider. We are not affiliated with, nor endorsed by, any of the brands mentioned on this website. The content on printerdoctor.info is designed to offer general troubleshooting steps and expert advice to assist users with common printer-related issues.
           </p>
         </motion.div>
 
         {/* Copyright and Links */}
         <motion.div 
-          className="text-center border-t border-gray-700 pt-8"
+          className="text-center border-t border-gray-700 pt-6 sm:pt-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -178,7 +178,7 @@ const Footer = () => {
         >
           <p className="text-gray-400 mb-4 font-serif">© 2024 Printer Fix. All Rights Reserved.</p>
           
-          <div className="flex justify-center items-center flex-wrap gap-4 text-gray-400">
+          <div className="flex justify-center items-center flex-wrap gap-2 sm:gap-4 text-sm sm:text-base text-gray-400">
             <Link to="/about-us" className="hover:text-blue-400 transition-colors font-serif">
               About Us
             </Link>

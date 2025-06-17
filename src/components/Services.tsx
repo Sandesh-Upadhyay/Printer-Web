@@ -6,25 +6,25 @@ const Services = () => {
     {
       icon: Monitor,
       title: "Installation & Setup",
-      description: "Professional installation and network configuration for new printers.",
+      description: "Installation and network configuration for new printers.",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: HeadphonesIcon,
-      title: "Quick Assistance",
-      description: "Quick response time for urgent printer issues to minimize downtime.",
+      title: "Technical Assistance",
+      description: "Assistance with printer issues to help minimize downtime.",
       color: "from-green-500 to-green-600"
     },
     {
       icon: Settings,
       title: "Managed Print Services", 
-      description: "Comprehensive print management to optimize costs and efficiency.",
+      description: "Print management services to help optimize costs and efficiency.",
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: UserCheck,
       title: "Printer Consulting",
-      description: "Expert advice on printer selection and fleet optimization.",
+      description: "Advice on printer selection and fleet optimization.",
       color: "from-orange-500 to-orange-600"
     }
   ];
@@ -59,7 +59,7 @@ const Services = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -10 }}
-              onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+              onClick={() => window.location.href = 'tel:+1-877-593-3790'}
             >
               <motion.div 
                 className={`flex items-center justify-center w-20 h-20 bg-gradient-to-r ${service.color} rounded-2xl mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}
@@ -91,21 +91,21 @@ const Services = () => {
               className="flex items-center group cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+              onClick={() => window.location.href = 'tel:+1-877-593-3790'}
             >
               <span className="text-2xl mr-2">🇺🇸</span>
               <span className="text-blue-600 font-bold text-xl font-serif group-hover:text-blue-700 transition-colors">
-                +1-888-404-6710
+                +1 (877) 593-3790
               </span>
             </motion.div>
             <motion.div 
               className="flex items-center group cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => window.location.href = 'mailto:info@allitexpert.com'}
+              onClick={() => window.location.href = 'mailto:contact@setupprinter.online'}
             >
               <span className="text-blue-600 font-bold font-serif group-hover:text-blue-700 transition-colors">
-                ✉️ info@allitexpert.com
+                ✉️ contact@setupprinter.online
               </span>
             </motion.div>
           </div>
@@ -118,7 +118,7 @@ const Services = () => {
               <Star className="w-5 h-5 fill-current" />
               <Star className="w-5 h-5 fill-current" />
             </div>
-            <span className="text-gray-600 font-serif">5-Star Rated Service</span>
+            <span className="text-gray-600 font-serif">Customer-focused service</span>
           </div>
         </motion.div>
       </div>

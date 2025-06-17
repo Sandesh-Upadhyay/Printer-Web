@@ -53,14 +53,14 @@ export default function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     whileHover={{ scale: 1.02, y: -5 }}
-                    onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+                    onClick={() => window.location.href = 'tel:+1-877-593-3790'}
                   >
                     <div className="p-3 rounded-lg bg-blue-50 group-hover:scale-110 transition-transform duration-300">
                       <Phone className="w-6 h-6 text-blue-600 flex-shrink-0" />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-gray-800 font-serif">Call Us</h4>
-                      <p className="text-blue-600 text-xl font-semibold font-serif">+1-888-404-6710</p>
+                      <p className="text-blue-600 text-xl font-semibold font-serif">+1 (877) 593-3790</p>
                       <p className="text-gray-600 font-serif">Call now for immediate assistance</p>
                     </div>
                   </motion.div>
@@ -72,14 +72,14 @@ export default function Contact() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                     whileHover={{ scale: 1.02, y: -5 }}
-                    onClick={() => window.location.href = 'mailto:info@allitexpert.com'}
+                    onClick={() => window.location.href = 'mailto:contact@setupprinter.online'}
                   >
                     <div className="p-3 rounded-lg bg-green-50 group-hover:scale-110 transition-transform duration-300">
                       <Mail className="w-6 h-6 text-green-600 flex-shrink-0" />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg text-gray-800 font-serif">Email Us</h4>
-                      <p className="text-green-600 text-xl font-semibold font-serif">info@allitexpert.com</p>
+                      <p className="text-green-600 text-xl font-semibold font-serif">contact@setupprinter.online</p>
                       <p className="text-gray-600 font-serif">We respond within 2 hours</p>
                     </div>
                   </motion.div>
