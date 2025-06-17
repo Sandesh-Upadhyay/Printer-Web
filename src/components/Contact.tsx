@@ -27,52 +27,51 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 sm:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-6xl font-bold text-gray-800 mb-6 font-serif">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 font-serif">
             Contact Us Today
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-serif">
-            Ready to get your printer fixed? Contact us now for fast, professional 
-            printer support services. We're here to help!
+          <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto font-serif">
+            Ready to get your printer fixed? Contact us for printer support services.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Info */}
           <motion.div 
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 font-serif">Get In Touch</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 font-serif">Get In Touch</h3>
             
             <div className="space-y-6">
               <motion.div 
-                className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group bg-blue-50"
+                className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 p-4 sm:p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group bg-blue-50"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 whileHover={{ scale: 1.02, y: -5 }}
-                onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+                onClick={() => window.location.href = 'tel:+1-877-593-3790'}
               >
-                <div className="p-3 rounded-lg bg-blue-50 group-hover:scale-110 transition-transform duration-300">
+                <div className="p-2 sm:p-3 rounded-lg bg-blue-50 group-hover:scale-110 transition-transform duration-300">
                   <Phone className="w-6 h-6 text-blue-600 flex-shrink-0" />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-gray-800 font-serif">Call Us</h4>
-                  <p className="text-blue-600 text-xl font-semibold font-serif">+1-888-404-6710</p>
-                  <p className="text-gray-600 font-serif">Call now for immediate assistance</p>
+                  <p className="text-blue-600 text-xl font-semibold font-serif">+1 (877) 593-3790</p>
+                  <p className="text-gray-600 font-serif">Available during business hours</p>
                 </div>
               </motion.div>
 
@@ -83,15 +82,15 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 whileHover={{ scale: 1.02, y: -5 }}
-                onClick={() => window.location.href = 'mailto:info@allitexpert.com'}
+                onClick={() => window.location.href = 'mailto:contact@setupprinter.online'}
               >
                 <div className="p-3 rounded-lg bg-green-50 group-hover:scale-110 transition-transform duration-300">
                   <Mail className="w-6 h-6 text-green-600 flex-shrink-0" />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-gray-800 font-serif">Email Us</h4>
-                  <p className="text-green-600 text-xl font-semibold font-serif">info@allitexpert.com</p>
-                  <p className="text-gray-600 font-serif">We respond within 2 hours</p>
+                  <p className="text-green-600 text-xl font-semibold font-serif">contact@setupprinter.online</p>
+                  <p className="text-gray-600 font-serif">We aim to respond promptly</p>
                 </div>
               </motion.div>
 
@@ -109,7 +108,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold text-lg text-gray-800 font-serif">Service Area</h4>
                   <p className="text-purple-600 text-xl font-semibold font-serif">All Metro Areas</p>
-                  <p className="text-gray-600 font-serif">On-site service available</p>
+                  <p className="text-gray-600 font-serif">On-site service may be available</p>
                 </div>
               </motion.div>
 
@@ -135,7 +134,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <motion.div 
-            className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100"
+            className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-gray-100"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -143,17 +142,17 @@ const Contact = () => {
           >
             <div className="flex items-center mb-6">
               <MessageCircle className="w-8 h-8 text-blue-600 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-800 font-serif">Request Service</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-serif">Request Service</h3>
             </div>
             <form className="space-y-6" onSubmit={handleSubmit}>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <motion.input 
                   type="text" 
                   name="firstName"
                   placeholder="First Name" 
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-serif transition-all duration-200 hover:border-blue-400"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-serif transition-all duration-200 hover:border-blue-400 text-base"
                   whileFocus={{ scale: 1.02 }}
                 />
                 <motion.input 
@@ -167,7 +166,7 @@ const Contact = () => {
                 />
               </div>
               
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <motion.input 
                   type="email" 
                   name="email"

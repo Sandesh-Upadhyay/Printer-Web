@@ -9,43 +9,49 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50 overflow-x-hidden">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         <AnimatePresence mode="wait">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             {children}
           </motion.div>
         </AnimatePresence>
       </main>
-      <div className="bg-white py-4 border-t">
+      <div className="bg-white py-3 sm:py-4 border-t">
 
-        <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8">
+        <div className="container mx-auto px-4 sm:px-6 flex flex-wrap justify-center gap-4 sm:gap-8">
           <motion.img 
             src="/trust-badges/ssl-secure.png" 
-            alt="SSL Secure" 
-            className="h-12"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            alt="SSL Security Certificate - Your Data is Protected" 
+            className="h-8 sm:h-12 w-auto object-contain"
+            loading="lazy"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
           />
           <motion.img 
             src="/trust-badges/bbb-aplus.png" 
-            alt="BBB A+" 
-            className="h-12"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            alt="Better Business Bureau A+ Rating Badge" 
+            className="h-8 sm:h-12 w-auto object-contain"
+            loading="lazy"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
           />
           <motion.img 
             src="/trust-badges/mcafee-secure.png" 
-            alt="McAfee Secure" 
-            className="h-12"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            alt="McAfee Secure Website Verification Badge" 
+            className="h-8 sm:h-12 w-auto object-contain"
+            loading="lazy"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
           />
         </div>
       </div>

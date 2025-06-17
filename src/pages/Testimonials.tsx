@@ -103,9 +103,9 @@ export default function Testimonials() {
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 font-serif"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'tel:+1-888-404-6710'}
+                onClick={() => window.location.href = 'tel:+1-877-593-3790'}
               >
-                Call Now: +1-888-404-6710
+                Call Now: +1 (877) 593-3790
               </motion.button>
             </motion.div>
           </div>
